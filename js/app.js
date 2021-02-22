@@ -27,30 +27,6 @@ CookieStand.prototype.getCustomers=function () { for ( let i = 0; i < openingHou
 }
 
 };
-/*
-CookieStand.prototype.render= function () {
-
-  const parentElement = document.getElementById( 'sales' );
-  const h2Element = document.createElement( 'h2' );
-  parentElement.appendChild( h2Element );
-  h2Element.textContent= this.name;
-
-  const ulElement = document.createElement( 'ul' );
-  parentElement.appendChild( ulElement );
-
-  for ( let i = 0; i < openingHours.length; i++ ) {
-    const liElement = document.createElement( 'li' );
-    ulElement.appendChild( liElement );
-    liElement.textContent=`${openingHours[i]}:${this.numberOfCookies[i]} cookies`;
-
-
-  }
-
-  const liTotalElement = document.createElement ( 'li' );
-  ulElement.appendChild( liTotalElement );
-  liTotalElement.textContent = `total : ${this.totalCookies} cookies`;
-};
-*/
 
 CookieStand.prototype.renderHeaderTable = function () {
   const parentElement = document.getElementById( 'sales' );
@@ -112,32 +88,32 @@ CookieStand.prototype.renderTable = function () {
 const Seattle = new CookieStand( 'Seattle', 23, 65, 6.3 );
 Seattle.cookiesSales( 23,65,6.3 );
 Seattle.getCustomers( 23,65 );
-//Seattle.render();
+
 Seattle.renderHeaderTable( 'Seattle', 23, 65, 6.3 );
 Seattle.renderTable( 'Seattle', 23, 65, 6.3 );
 const Tokyo = new CookieStand( 'Tokyo', 3, 24, 1.2 );
 Tokyo.cookiesSales( 3,24,1.2 );
 Tokyo.getCustomers( 3,24 );
 Tokyo.renderTable( 'Tokyo', 3, 24, 1.2 );
-//Tokyo.render();
+
 
 const Dubai = new CookieStand( 'Dubai', 11, 38, 3.7 );
 Dubai.cookiesSales( 11,38,3.7 );
 Dubai.getCustomers( 11,38 );
 Dubai.renderTable( 'Dubai', 11, 38, 3.7 );
-//Dubai.render();
+
 
 const Paris = new CookieStand( 'Paris', 20, 38, 2.3 );
 Paris.cookiesSales( 20,38,2.3 );
 Paris.getCustomers( 20,38 );
 Paris.renderTable( 'Paris',20, 38, 2.3 );
-//Paris.render();
+
 
 const Lima = new CookieStand( 'Lima', 2, 16, 4.6 );
 Lima.cookiesSales( 2, 16, 4.6 );
 Lima.getCustomers( 2, 16 );
 Lima.renderTable( 'Lima',20, 38, 2.3 );
-//Lima.render();
+
 
 function getRandomArbitrary( min,max )
 {return Math.floor( Math.random()*( max-min+1 )+min );}
