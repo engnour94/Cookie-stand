@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body{
+    
+    background-color: rgb(121, 141, 141);
+    max-width: 80%;
+    margin: auto;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    align-items: center;
+    margin-left: auto;
+  margin-right: auto;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  tr:nth-child(odd) {background-color: #e8f3ab;}
+  th {
+    background-color: #ac7a9b;
+    color: white;
+  }
+  header h1{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+  }
+  footer{
+    background-color: black;
+    color: blanchedalmond;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin: 30px 30px;
+    padding: 10px 10px;
+
+}
+
+body main p a{
+   
+  text-align: center;
+
+}

@@ -5,15 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pat's Salmon cookies</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .mySlides {display:none;  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+border-radius: 50px;}
+        </style>
+        <body>
+
 </head>
 <body>
-    <header><h1>Welcome to Pat's Salmon cookies shops 😇</h1></header>
+    <header><h1>Welcome to Pat's Salmon cookies shops 😇</h1>
+    </header>
+
     <main>
-        <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="Logo"> 
+       <section>
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/salmon.png" alt="salmon">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/chinook.jpg" alt="chinook">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/cutter.jpeg" alt="cutter">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/family.jpg" alt="family">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/fish.jpg" alt="fish">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/frosted-cookie.jpg" alt="frosted-cookie">
+        <img class="mySlides" src="https://raw.githubusercontent.com/waleedafifi90/amman-201d17/main/class-08/lab-b/assets/shirt.jpg" alt="shirt">
+       </section>
+       <section>
+           <h2>Seattle</h2>
+           <ul>
+               <li><span>Locations with addresses :</span>  413 7th Ave S, Seattle, WA 98104,USA</li>
+               <li><span>Hours open :</span> 6:00 am - 8:00 PM</li>
+               <li><span>Contact information :</span>seattle-pat@cookies.com</li>
+           </ul>
+       </section>
+       
+
+ <section>
+           <h2>Tokyo</h2>
+           <ul>
+               <li><span>Locations with addresses :</span>  MJGX+CJ Suginami City, Tokyo, Japan </li>
+               <li><span>Hours open :</span> 6:00 am - 8:00 PM</li>
+               <li><span>Contact information :</span> tokyo-pat@cookies.com</li>
+           </ul>
+       </section>
+
+ <section>
+           <h2>Dubai</h2>
+           <ul>
+               <li><span>Locations with addresses :</span>  46G4+R8 Dubai - United Arab Emirates</li>
+               <li> <span>Hours open :</span>  6:00 am - 8:00 PM</li>
+               <li> <span>Contact information :</span> dubai-pat@cookies.com</li>
+           </ul>
+       </section>
+       <section>
+        <h2>Paris</h2>
+        <ul>
+            <li><span>Locations with addresses :</span>77 Rue de Varenne, 75007 Paris, France </li>
+            <li><span>Hours open :</span> 6:00 am - 8:00 PM</li>
+            <li><span>Contact information :</span> paris-pat@cookies.com</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Lima</h2>
+        <ul>
+            <li><span>Locations with addresses :</span> A3096 taboadita, Bellavista callao, Lima 07011, Peru </li>
+            <li><span>Hours open :</span> 6:00 am - 8:00 PM</li>
+            <li><span>Contact information :</span> lima-pat@cookies.com</li>
+        </ul>
+    </section>
+   
     </main>
     <footer>
+       <P>All Right Reserved 2021 &copy;</P> 
       <a href="./sales.html">Sales Data</a>  
     </footer>
+    <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1} 
+          x[slideIndex-1].style.display = "block"; 
+          setTimeout(carousel, 2000); 
+        }
+        </script>
     <script src="../js/app.js"></script>
 </body>
-</html>
