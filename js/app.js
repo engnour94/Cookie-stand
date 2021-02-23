@@ -137,3 +137,4 @@ const tableFooter = function() {
 };
 
 tableFooter();
+
