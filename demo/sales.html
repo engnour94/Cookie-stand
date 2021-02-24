@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Data</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styleSales.css">
    
 </head>
@@ -12,10 +13,32 @@
   
     <header><h1>Sales Data</h1></header>
     <Main>
-      
-     
+      <h2>Sales Table: The number of Sales cookies per day for each branch</h2>
+         <form id="addNewForm"> 
+         <fieldset>
+          <legend>Add a new branch to table </legend>
+
+          <label for="cityName">Location Name: </label>
+          <input type="text" id="cityName" name="city-name">
+           
+          <label for="minCustomer">Minimum customers per hours</label>
+          <input type= "number" min="0" id="minCustomer" name="min-customer" >
+          
+          <label for="maxCustomer">Maximum customers per hours</label>
+          <input type= "number" min="0" id="maxCustomer" name="max-customer" >
+
+          <label for="avgCookies">Average cookies per sale </label>
+          <input type= "number" min="0" id="avgCookies" name="avg-cookies" step="any" >
+           
+          <button type="submit">Click Here to add Branch</button>
+          </fieldset>
+          </form>
+          <div id='sales'></div>
+
     </Main>
-    <div id='sales'></div>
+    
+
+ 
     <footer>
       <P>All Right Reserved 2021 &copy;</P> 
       <a href="../demo/index.html">Home</a>
