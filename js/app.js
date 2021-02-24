@@ -17,7 +17,7 @@ CookieStand.prototype.cookiesSales= function( ){
   for ( let i = 0; i < openingHours.length; i++ ) {
     let cookies= Math.ceil( getRandomArbitrary( this.min,this.max )*this.avg );
     this.numberOfCookies.push( cookies );
-    this.totalCookies += this.numberOfCookies[i];
+    this.totalCookies += cookies;
   }
 };
 CookieStand.prototype.getCustomers=function () { for ( let i = 0; i < openingHours.length; i++ ) {
@@ -47,7 +47,7 @@ CookieStand.prototype.render = function () {
 
   const td3 = document.createElement( 'td' );
   tr.appendChild( td3 );
-  td3.textContent = this.totalCookies/2;
+  td3.textContent = this.totalCookies;
 };
 
 
@@ -133,7 +133,7 @@ const tableFooter = function() {
 
   const th3 = document.createElement( 'th' );
   tr.appendChild( th3 );
-  th3.textContent = ( Seattle.totalCookies + Tokyo.totalCookies + Dubai.totalCookies + Paris.totalCookies + Lima.totalCookies )/2;
+  th3.textContent = Seattle.totalCookies + Tokyo.totalCookies + Dubai.totalCookies + Paris.totalCookies + Lima.totalCookies;
 };
 
 tableFooter();
