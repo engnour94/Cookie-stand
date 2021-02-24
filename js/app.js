@@ -48,7 +48,6 @@ CookieStand.prototype.render = function () {
   tr.appendChild( td3 );
   td3.textContent = this.totalCookies;
 
-  locationsArray.push( this );
 };
 
 
@@ -83,7 +82,7 @@ tableHeader();
 
 const Seattle = new CookieStand( 'Seattle', 23, 65, 6.3 );
 Seattle.cookiesSales( );
-Seattle.getCustomers();
+
 
 Seattle.render( );
 
