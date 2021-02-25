@@ -3,18 +3,46 @@
 body{
     
     background-color: rgb(121, 141, 141);
-    max-width: 80%;
+  width: 960px;
     margin: auto;
 
 }
 
+
+h1{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Fjalla One', serif;
+  font-size: 50px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }}
+
+   h2{font-family: 'Fjalla One', serif; font-size: 25px;
+    text-align: center;
+
+ font-weight: bold;
+ color: rgb(0, 0, 0);
+   } 
+   table{height: 300px;}
 table, th, td {
+  width: 960px;
     border: 1px solid black;
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
     align-items: center;
-    margin-left: auto;
-  margin-right: auto;
+  vertical-align: middle;
   }
   tr:nth-child(even) {background-color: #f2f2f2;}
   tr:nth-child(odd) {background-color: #e8f3ab;}
@@ -23,21 +51,40 @@ table, th, td {
     color: white;
   }
   header h1{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', serif;
     text-align: center;
   }
   footer{
+    width: 960px;
     background-color: black;
     color: blanchedalmond;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', serif;
     text-align: center;
-    margin: 30px 30px;
+  
     padding: 10px 10px;
-
+margin-top: 80px;
 }
 
 body main p a{
    
   text-align: center;
 
+}
+fieldset{
+  text-indent: 10px;
+  margin-top: 20px;
+ width: 960px;
+ height: 80px;
+  border-radius: 10px;
+  background-color: orchid;
+  box-sizing: border-box; border: 1px solid blanchedalmond;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+legend{
+  background: blanchedalmond;
+  border: 2px solid orchid;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
