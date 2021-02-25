@@ -86,7 +86,7 @@ tableHeader();
 
 const Seattle = new CookieStand( 'Seattle', 23, 65, 6.3 );
 Seattle.cookiesSales( );
-Seattle.getCustomers();
+
 
 Seattle.render( );
 
